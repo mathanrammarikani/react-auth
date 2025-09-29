@@ -1,3 +1,4 @@
+import { Pagenavbar } from "~/homelayout/pagenavbar";
 import type { Route } from "./+types/home";
 import { Homepagefunc } from "~/homelayout/homepage";
 
@@ -9,5 +10,10 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Homepagefunc />;
+  return (
+    <div>
+      <Pagenavbar />
+      <Homepagefunc />
+    </div>
+  );
 }
