@@ -25,6 +25,7 @@ export function Welcome() {
               What&apos;s next??
             </p>
             <p>this is a new one in v0.11</p>
+            <p>this is a new line</p>
             <ul>
               {resources.map(({ href, text, icon }) => (
                 <li key={href}>
